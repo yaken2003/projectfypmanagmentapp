@@ -11,7 +11,7 @@ function fetchTasks() {
     
     const email = localStorage.getItem("email");
     const password = localStorage.getItem("password");
-    fetch('https://projectmanagment-kappa.vercel.app/api/tasks', {
+    fetch('https://projectfypmanagmentapp.vercel.app/api/tasks', {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json',
@@ -40,7 +40,7 @@ function fetchAllTasks() {
     const email = localStorage.getItem("email");
     const password = localStorage.getItem("password");
     
-    fetch(`https://projectmanagment-kappa.vercel.app/api/tasks`, {
+    fetch(`https://projectfypmanagmentapp.vercel.app/api/tasks`, {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json',
@@ -92,7 +92,7 @@ function updateStatus(event) {
             progress = 0;
     }
 
-    fetch('https://projectmanagment-kappa.vercel.app/api/tasks/status', {
+    fetch('https://projectfypmanagmentapp.vercel.app/api/tasks/status', {
         method: 'PUT',
         headers: {
             'Content-Type': 'application/json',
