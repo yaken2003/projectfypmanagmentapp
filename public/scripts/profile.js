@@ -18,7 +18,7 @@ function fetchUser() {
   //   const password = localStorage.getItem("password");
 
   // Fetch user data and prefill form
-  fetch(`https://projectmanagment-kappa.vercel.app/api/users/getUserByEmail/${email}`, {
+  fetch(`https://projectfypmanagmentapp.vercel.app/api/users/getUserByEmail/${email}`, {
     method: "GET",
     headers: {
       "Content-Type": "application/json",
@@ -53,7 +53,7 @@ document.getElementById("profileForm").addEventListener("submit", (e) => {
   const updatedUsername = usernameField.value.trim();
   const updatedEmail = emailField.value.trim();
 
-  fetch(`https://projectmanagment-kappa.vercel.app/api/users`, {
+  fetch(`https://projectfypmanagmentapp.vercel.app/api/users`, {
     method: "PUT",
     headers: {
       "Content-Type": "application/json",
@@ -102,7 +102,7 @@ function fetchTasksByUser() {
 
 //   alert(userId)
 
-  fetch(`https://projectmanagment-kappa.vercel.app/api/tasks/getTasksByUser/${userId}`, {
+  fetch(`https://projectfypmanagmentapp.vercel.app/api/tasks/getTasksByUser/${userId}`, {
     method: "GET",
     headers: {
       "Content-Type": "application/json",
