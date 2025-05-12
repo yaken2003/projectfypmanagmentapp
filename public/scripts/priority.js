@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const email = localStorage.getItem("email");
     const password = localStorage.getItem("password");
   
-    fetch(`https://projectmanagment-kappa.vercel.app/api/tasks`, {
+    fetch(`https://projectfypmanagmentapp.vercel.app/api/tasks`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -115,7 +115,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
     alert(selectedTaskId + newPriority);
   
-    fetch(`https://projectmanagment-kappa.vercel.app/api/tasks/priority/${selectedTaskId}`, {
+    fetch(`https://projectfypmanagmentapp.vercel.app/api/tasks/priority/${selectedTaskId}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -143,7 +143,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
     alert(selectedTaskId + newRepeats);
   
-    fetch(`https://projectmanagment-kappa.vercel.app/api/tasks/repeats/${selectedTaskId}`, {
+    fetch(`https://projectfypmanagmentapp.vercel.app/api/tasks/repeats/${selectedTaskId}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -166,7 +166,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function fetchProjects() {
     const email = localStorage.getItem("email");
     const password = localStorage.getItem("password");
-    fetch("https://projectmanagment-kappa.vercel.app/api/projects", {
+    fetch("https://projectfypmanagmentapp.vercel.app/api/projects", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -192,7 +192,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const email = localStorage.getItem("email");
     const password = localStorage.getItem("password");
   
-    fetch("https://projectmanagment-kappa.vercel.app/api/tasks", {
+    fetch("https://projectfypmanagmentapp.vercel.app/api/tasks", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -301,7 +301,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
   
   function fetchAssignees() {
-    fetch("https://project-management-255c.vercel.app/api/users", {
+    fetch("https://projectfypmanagmentapp.vercel.app/api/users", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -333,7 +333,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
     const email = localStorage.getItem("email");
     const password = localStorage.getItem("password");
-    fetch("https://project-management-255c.vercel.app/api/tasks/assign", {
+    fetch("https://projectfypmanagmentapp.vercel.app/api/tasks/assign", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -372,7 +372,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
     const email = localStorage.getItem("email");
     const password = localStorage.getItem("password");
-    fetch("https://project-management-255c.vercel.app/api/tasks", {
+    fetch("https://projectfypmanagmentapp.vercel.app/api/tasks", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
