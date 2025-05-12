@@ -7,7 +7,7 @@ function fetchAllTasks() {
     const email = localStorage.getItem("email");
     const password = localStorage.getItem("password");
 
-    fetch(`https://projectmanagment-kappa.vercel.app/api/tasks?email=${email}`, {
+    fetch(`https://projectfypmanagmentapp.vercel.app/api/tasks?email=${email}`, {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json',
